@@ -211,8 +211,7 @@ class DemoPage extends StatelessWidget {
                 _SwatchRow(
                   title: 'Surface',
                   swatches: [
-                    _Swatch(color: tokens.surface.background, label: 'background'),
-                    _Swatch(color: tokens.surface.canvas, label: 'canvas'),
+                    _Swatch(color: tokens.surface.surface, label: 'surface'),
                     _Swatch(color: tokens.surface.elevated, label: 'elevated'),
                     _Swatch(color: tokens.surface.border, label: 'border'),
                   ],
@@ -396,7 +395,7 @@ class DemoPage extends StatelessWidget {
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,
-      backgroundColor: t.surface.canvas,
+      backgroundColor: t.surface.surface,
       builder: (_) {
         return Padding(
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
@@ -472,7 +471,7 @@ class _Card extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: t.surface.canvas,
+        color: t.surface.surface,
         borderRadius: BorderRadius.circular(18),
         border: Border.all(color: t.surface.border),
         boxShadow: [

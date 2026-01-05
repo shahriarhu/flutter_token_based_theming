@@ -41,19 +41,19 @@ class _OceanBrandLight implements BrandColors {
   Color get primary => const Color(0xFF2563EB);
 
   @override
-  Color get primaryContainer => const Color(0xFFDBEAFE);
+  Color get onPrimary => Colors.white;
 
   @override
-  Color get onPrimary => Colors.white;
+  Color get primaryContainer => const Color(0xFFDBEAFE);
 
   @override
   Color get secondary => const Color(0xFF14B8A6);
 
   @override
-  Color get secondaryContainer => const Color(0xFFCCFBF1);
+  Color get onSecondary => Colors.white;
 
   @override
-  Color get onSecondary => Colors.white;
+  Color get secondaryContainer => const Color(0xFFCCFBF1);
 }
 
 class _OceanTextLight implements TextColors {
@@ -79,10 +79,7 @@ class _OceanSurfaceLight implements SurfaceColors {
   const _OceanSurfaceLight();
 
   @override
-  Color get background => const Color(0xFFF8FAFC);
-
-  @override
-  Color get canvas => Colors.white;
+  Color get surface => Colors.white;
 
   @override
   Color get elevated => Colors.white;
@@ -114,19 +111,19 @@ class _OceanBrandDark implements BrandColors {
   Color get primary => const Color(0xFF60A5FA);
 
   @override
-  Color get primaryContainer => const Color(0xFF0B2A4A);
+  Color get onPrimary => const Color(0xFF001E2F);
 
   @override
-  Color get onPrimary => const Color(0xFF001E2F);
+  Color get primaryContainer => const Color(0xFF0B2A4A);
 
   @override
   Color get secondary => const Color(0xFF2DD4BF);
 
   @override
-  Color get secondaryContainer => const Color(0xFF0B3B36);
+  Color get onSecondary => const Color(0xFF003731);
 
   @override
-  Color get onSecondary => const Color(0xFF003731);
+  Color get secondaryContainer => const Color(0xFF0B3B36);
 }
 
 class _OceanTextDark implements TextColors {
@@ -152,10 +149,7 @@ class _OceanSurfaceDark implements SurfaceColors {
   const _OceanSurfaceDark();
 
   @override
-  Color get background => const Color(0xFF0F172A);
-
-  @override
-  Color get canvas => const Color(0xFF0B1220);
+  Color get surface => const Color(0xFF0B1220);
 
   @override
   Color get elevated => const Color(0xFF111C2E);

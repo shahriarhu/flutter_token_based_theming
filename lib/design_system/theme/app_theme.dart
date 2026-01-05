@@ -19,7 +19,7 @@ abstract final class AppTheme {
       useMaterial3: true,
       brightness: brightness,
       colorScheme: scheme,
-      scaffoldBackgroundColor: tokens.surface.background,
+      scaffoldBackgroundColor: tokens.surface.surface,
       fontFamily: typography.fontFamily,
       fontFamilyFallback: typography.fallback,
     );
@@ -32,18 +32,14 @@ abstract final class AppTheme {
     return base.copyWith(
       textTheme: textTheme,
       appBarTheme: AppBarTheme(
-        backgroundColor: tokens.surface.canvas,
+        backgroundColor: tokens.surface.surface,
         foregroundColor: tokens.text.strong,
         elevation: 0,
-        titleTextStyle: textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: scheme.primary,
           foregroundColor: scheme.onPrimary,
-          textStyle: textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w600),
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
         ),
       ),
     );

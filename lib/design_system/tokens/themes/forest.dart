@@ -41,19 +41,19 @@ class _ForestBrandLight implements BrandColors {
   Color get primary => const Color(0xFF15803D);
 
   @override
-  Color get primaryContainer => const Color(0xFFDCFCE7);
+  Color get onPrimary => Colors.white;
 
   @override
-  Color get onPrimary => Colors.white;
+  Color get primaryContainer => const Color(0xFFDCFCE7);
 
   @override
   Color get secondary => const Color(0xFF0EA5E9);
 
   @override
-  Color get secondaryContainer => const Color(0xFFE0F2FE);
+  Color get onSecondary => Colors.white;
 
   @override
-  Color get onSecondary => Colors.white;
+  Color get secondaryContainer => const Color(0xFFE0F2FE);
 }
 
 class _ForestTextLight implements TextColors {
@@ -79,10 +79,7 @@ class _ForestSurfaceLight implements SurfaceColors {
   const _ForestSurfaceLight();
 
   @override
-  Color get background => const Color(0xFFF8FAFC);
-
-  @override
-  Color get canvas => Colors.white;
+  Color get surface => Colors.white;
 
   @override
   Color get elevated => Colors.white;
@@ -114,19 +111,19 @@ class _ForestBrandDark implements BrandColors {
   Color get primary => const Color(0xFF4ADE80);
 
   @override
-  Color get primaryContainer => const Color(0xFF052E16);
+  Color get onPrimary => const Color(0xFF052E16);
 
   @override
-  Color get onPrimary => const Color(0xFF052E16);
+  Color get primaryContainer => const Color(0xFF052E16);
 
   @override
   Color get secondary => const Color(0xFF38BDF8);
 
   @override
-  Color get secondaryContainer => const Color(0xFF0B2A4A);
+  Color get onSecondary => const Color(0xFF001E2F);
 
   @override
-  Color get onSecondary => const Color(0xFF001E2F);
+  Color get secondaryContainer => const Color(0xFF0B2A4A);
 }
 
 class _ForestTextDark implements TextColors {
@@ -152,10 +149,7 @@ class _ForestSurfaceDark implements SurfaceColors {
   const _ForestSurfaceDark();
 
   @override
-  Color get background => const Color(0xFF0F172A);
-
-  @override
-  Color get canvas => const Color(0xFF0B1220);
+  Color get surface => const Color(0xFF0B1220);
 
   @override
   Color get elevated => const Color(0xFF111C2E);

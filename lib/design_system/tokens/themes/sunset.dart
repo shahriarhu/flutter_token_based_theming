@@ -41,19 +41,19 @@ class _SunsetBrandLight implements BrandColors {
   Color get primary => const Color(0xFFEA580C);
 
   @override
-  Color get primaryContainer => const Color(0xFFFFEDD5);
+  Color get onPrimary => Colors.white;
 
   @override
-  Color get onPrimary => Colors.white;
+  Color get primaryContainer => const Color(0xFFFFEDD5);
 
   @override
   Color get secondary => const Color(0xFFDB2777);
 
   @override
-  Color get secondaryContainer => const Color(0xFFFCE7F3);
+  Color get onSecondary => Colors.white;
 
   @override
-  Color get onSecondary => Colors.white;
+  Color get secondaryContainer => const Color(0xFFFCE7F3);
 }
 
 class _SunsetTextLight implements TextColors {
@@ -79,10 +79,7 @@ class _SunsetSurfaceLight implements SurfaceColors {
   const _SunsetSurfaceLight();
 
   @override
-  Color get background => const Color(0xFFFFFBEB);
-
-  @override
-  Color get canvas => Colors.white;
+  Color get surface => Colors.white;
 
   @override
   Color get elevated => Colors.white;
@@ -114,19 +111,19 @@ class _SunsetBrandDark implements BrandColors {
   Color get primary => const Color(0xFFFB923C);
 
   @override
-  Color get primaryContainer => const Color(0xFF3B1D0A);
+  Color get onPrimary => const Color(0xFF1F130B);
 
   @override
-  Color get onPrimary => const Color(0xFF1F130B);
+  Color get primaryContainer => const Color(0xFF3B1D0A);
 
   @override
   Color get secondary => const Color(0xFFF472B6);
 
   @override
-  Color get secondaryContainer => const Color(0xFF3A1024);
+  Color get onSecondary => const Color(0xFF1F0A14);
 
   @override
-  Color get onSecondary => const Color(0xFF1F0A14);
+  Color get secondaryContainer => const Color(0xFF3A1024);
 }
 
 class _SunsetTextDark implements TextColors {
@@ -139,7 +136,7 @@ class _SunsetTextDark implements TextColors {
   Color get body => const Color(0xFFFED7AA);
 
   @override
-  Color get muted => const Color(0xFFFDba74);
+  Color get muted => const Color(0xFFFDBA74);
 
   @override
   Color get inverse => const Color(0xFF0B1220);
@@ -152,10 +149,7 @@ class _SunsetSurfaceDark implements SurfaceColors {
   const _SunsetSurfaceDark();
 
   @override
-  Color get background => const Color(0xFF0F172A);
-
-  @override
-  Color get canvas => const Color(0xFF0B1220);
+  Color get surface => const Color(0xFF0B1220);
 
   @override
   Color get elevated => const Color(0xFF111C2E);

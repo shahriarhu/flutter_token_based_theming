@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'dart:ui';
 
 abstract class AppColorTokens {
   BrandColors get brand;
@@ -13,15 +13,15 @@ abstract class AppColorTokens {
 abstract class BrandColors {
   Color get primary;
 
-  Color get primaryContainer;
-
   Color get onPrimary;
+
+  Color get primaryContainer;
 
   Color get secondary;
 
-  Color get secondaryContainer;
-
   Color get onSecondary;
+
+  Color get secondaryContainer;
 }
 
 abstract class TextColors {
@@ -37,9 +37,7 @@ abstract class TextColors {
 }
 
 abstract class SurfaceColors {
-  Color get background;
-
-  Color get canvas;
+  Color get surface;
 
   Color get elevated;
 

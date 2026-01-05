@@ -41,19 +41,19 @@ class _MonoBrandLight implements BrandColors {
   Color get primary => const Color(0xFF111827);
 
   @override
-  Color get primaryContainer => const Color(0xFFE5E7EB);
+  Color get onPrimary => Colors.white;
 
   @override
-  Color get onPrimary => Colors.white;
+  Color get primaryContainer => const Color(0xFFE5E7EB);
 
   @override
   Color get secondary => const Color(0xFF6B7280);
 
   @override
-  Color get secondaryContainer => const Color(0xFFF3F4F6);
+  Color get onSecondary => Colors.white;
 
   @override
-  Color get onSecondary => Colors.white;
+  Color get secondaryContainer => const Color(0xFFF3F4F6);
 }
 
 class _MonoTextLight implements TextColors {
@@ -79,10 +79,7 @@ class _MonoSurfaceLight implements SurfaceColors {
   const _MonoSurfaceLight();
 
   @override
-  Color get background => const Color(0xFFF9FAFB);
-
-  @override
-  Color get canvas => Colors.white;
+  Color get surface => Colors.white;
 
   @override
   Color get elevated => Colors.white;
@@ -114,19 +111,19 @@ class _MonoBrandDark implements BrandColors {
   Color get primary => const Color(0xFFE5E7EB);
 
   @override
-  Color get primaryContainer => const Color(0xFF111827);
+  Color get onPrimary => const Color(0xFF111827);
 
   @override
-  Color get onPrimary => const Color(0xFF111827);
+  Color get primaryContainer => const Color(0xFF111827);
 
   @override
   Color get secondary => const Color(0xFF9CA3AF);
 
   @override
-  Color get secondaryContainer => const Color(0xFF1F2937);
+  Color get onSecondary => const Color(0xFF111827);
 
   @override
-  Color get onSecondary => const Color(0xFF111827);
+  Color get secondaryContainer => const Color(0xFF1F2937);
 }
 
 class _MonoTextDark implements TextColors {
@@ -152,10 +149,7 @@ class _MonoSurfaceDark implements SurfaceColors {
   const _MonoSurfaceDark();
 
   @override
-  Color get background => const Color(0xFF0B1220);
-
-  @override
-  Color get canvas => const Color(0xFF0F172A);
+  Color get surface => const Color(0xFF0F172A);
 
   @override
   Color get elevated => const Color(0xFF111827);
